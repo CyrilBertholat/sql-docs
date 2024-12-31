@@ -160,13 +160,14 @@ For example, set this argument to an empty string as follows:
 
 An option that controls behavior. *@flags* is **int**, with a default of `NULL`.
 
-| Value | Description |
-| --- | --- |
-| `0` (default) | Overwrite output file |
-| `2` | Append to output file |
-| `4` | Write Transact-SQL job step output to step history |
-| `8` | Write log to table (overwrite existing history) |
-| `16` | Write log to table (append to existing history) |
+| Value | Description | Comment |
+| --- | --- | --- |
+| `0` (default) | Overwrite output file | |
+| `2` | Append to output file | |
+| `4` | Write Transact-SQL job step output to step history | Apply to Type : Transact-SQL, Analysis Services Command and Analysis Query |
+| `8` | Write log to table (overwrite existing history) | |
+| `16` | Write log to table (append to existing history) | |
+| `32` | Write SSIS/CmdExe/Powershell job step output to step history | Apply to Type : CmdExe, Powershell and Integration Services Package |
 
 #### [ @proxy_id = ] *proxy_id*
 
